@@ -1,0 +1,98 @@
+.owner {
+  text-align: center;
+}
+
+.owner h2 {
+  color: #EB048D;
+  font-size: 35px;
+}
+
+.owner img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 6px solid #f8bcd1;
+    box-shadow: 0 0 15px rgba(233, 30, 99, 0.3);
+}
+
+.owner h3 {
+  color: #EB048D;
+  font-size: 25px;
+}
+
+.owner p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.team-photos {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-photos h2, .staff h2 {
+  color: #EB048D;  
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.team-photos img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+.staff {
+  text-align: center;
+}
+
+.staff h3 {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.staff-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #E4A5C2;
+  border-radius: 12px;
+  padding: 25px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(233, 30, 99, 0.3);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #E4A5C2;
+  color: #EB048D;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.card h4 {
+  color: #EB048D;
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.job {
+  margin-bottom: 0;
+  font-weight: bold;
+}

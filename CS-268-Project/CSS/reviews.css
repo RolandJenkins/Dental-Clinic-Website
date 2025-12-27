@@ -1,0 +1,38 @@
+
+    .reviews-header {
+    text-align: center;
+    }
+
+    .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    }
+
+    .review-card {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 20px;
+    transition: transform 0.2s ease;
+    }
+
+    .review-card:hover {
+    transform: translateY(-5px);
+    }
+
+    .stars {
+    color: gold;
+    margin: 5px 0;
+    font-size: 1.2em;
+    }
+
+    .review-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    }

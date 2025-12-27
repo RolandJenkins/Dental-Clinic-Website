@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Global.css">
+    <link rel="stylesheet" href="CSS/PhotoGallery.css">
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <div id="container">
+
+        <section class="nav">
+        
+            <div class="topnav">
+                <a href="Home.html"><img class="logo" src="Images/Logo_no_text.png" alt="Logo"></a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">About
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Team.html">Our Team</a>
+                        <a href="Office.html">Office</a>
+                        <a href="PhotoGallery.html">Photo Gallery</a>
+                        <a href="ContactUs.php">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Services
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Services.html">Services</a>
+                        <a href="FAQS.html">FAQs</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Patients
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="PatientForms.html">Patient Forms</a>
+                        <a href="BookAppointment.html">Book an Appointment</a>
+                        <a href="Reviews.html">Reviews</a>
+                    </div>
+                </div>
+
+            </div>
+        
+        </section>
+
+         <section class="content">
+                <main>
+                  <div class="page-wrapper">
+                    <div class="main-content">
+                        <div class="header">
+                            <h1>Photo Gallery</h1>
+                        </div>
+                        <div class="slideshow-container">
+
+                            <div class="mySlides">
+                            <div class="numbertext">1 / 7</div>
+                            <img src="Images/Gallery/Lobby.webp" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                            <div class="numbertext">2 / 7</div>
+                            <img src="Images/Gallery/lobby2.webp" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                            <div class="numbertext">3 / 7</div>
+                            <img src="Images/Gallery/Sign.webp" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                            <div class="numbertext">4 / 7</div>
+                            <img src="Images/Gallery/dinner.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                            <div class="numbertext">5 / 7</div>
+                            <img src="Images/Gallery/halloween.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                            <div class="numbertext">6 / 7</div>
+                            <img src="Images/Gallery/outside.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                            <div class="numbertext">7 / 7</div>
+                            <img src="Images/Gallery/outside2.jpg" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                        </div>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                            <span class="dot" onclick="currentSlide(4)"></span> 
+                            <span class="dot" onclick="currentSlide(5)"></span> 
+                            <span class="dot" onclick="currentSlide(6)"></span> 
+                            <span class="dot" onclick="currentSlide(7)"></span> 
+                        </div>
+                    </div>
+                    <aside class="sidebar"> <!--This aside is the same on every page that has it, if you think your page shouldnt have it just delete and the formatting shoudld still be fine-->
+                        <h2>Our Location</h2>
+                        <p>707 6th Ave.<br>Antigo, WI 54409-1803<br>(715) 627-4391</p>
+                        <a class="map-btn" target="_blank" href="https://maps.app.goo.gl/s1AReAYif4gv7ng36">MAP & DIRECTIONS</a>
+
+                        <hr style="margin:25px 0; border-color:#FFB6C1;">
+
+                        <h2>Learn More</h2>
+                        <ul>
+                            <li><a href="#">Cosmetic Dentistry</a></li>
+                            <li><a href="#">Dental Implants</a></li>
+                            <li><a href="#">Crowns</a></li>
+                        </ul>
+
+                        <hr style="margin:25px 0; border-color:#FFB6C1;">
+
+                        <h2>Mission Statement</h2>
+                        <p>Our mission is to provide quality dental care with compassion and professionalism.
+                        We aim to create a welcoming environment that helps patients feel comfortable and confident in their care.</p>
+                    </aside>
+                  </div>
+              </main>
+            </section>
+
+        <section class="footer"> <!--This is the same on every page-->
+            <p>&copy; 2025 Campus Dental Clinic | Student Web Design Project</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Use</a>
+                </div>
+        </section>
+
+
+    </div>
+   <script>
+        let slideIndex = 1;
+            showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
